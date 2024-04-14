@@ -28,3 +28,25 @@
 .music-eras-table th {
     background-color: #f0f0f0;
 }
+#learn-title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.image-icon {
+    height: 100px;
+}
+.hint {
+    padding: 100px 0;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+.hint div,
+img {
+    padding-top: 20px;
+}

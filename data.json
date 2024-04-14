@@ -1,14 +1,29 @@
 {
-    "medieval": {
+    "1": {
         "id": 1,
-        "title": "Medieval"
+        "title": "Medieval",
+        "audio": [
+            "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav",
+            "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"
+        ],
+        "next": "2"
     },
-    "renaissance": {
+    "2": {
         "id": 2,
-        "title": "Renaissance"
+        "title": "Renaissance",
+        "audio": [
+            "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav",
+            "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"
+        ],
+        "next": "3"
     },
-    "baroque": {
+    "3": {
         "id": 3,
-        "title": "Baroque"
+        "title": "Baroque",
+        "audio": [
+            "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav",
+            "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"
+        ],
+        "next": "1"
     }
 }

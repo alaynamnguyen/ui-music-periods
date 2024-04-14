@@ -14,9 +14,9 @@ def home():
    return render_template('home.html', data=data)   
 
 
-@app.route('/view/<id>')
+@app.route('/learn/<id>')
 def view(id=None):
-    return render_template('view.html', id=id, data=data) 
+    return render_template('learn.html', id=id, data=data) 
 
 if __name__ == '__main__':
    app.run(debug = True)
