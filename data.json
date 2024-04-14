@@ -1,0 +1,14 @@
+{
+    "medieval": {
+        "id": 1,
+        "title": "Medieval"
+    },
+    "renaissance": {
+        "id": 2,
+        "title": "Renaissance"
+    },
+    "baroque": {
+        "id": 3,
+        "title": "Baroque"
+    }
+}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block content %}
+
+<script type="text/javascript"></script>
+
+<script>
+    let data = {{data|tojson}}
+    console.log(data)
+</script>
+
+<div class="home">
+    <h1>Learning Guide to Classical Music Eras</h1>
+    <p>Practice the ability to identify classical music by period!</p>
+    <table class="music-eras-table">
+        <tbody>
+            <tr>
+                <td>Medieval</td>
+                <td>Baroque</td>
+                <td>Romantic</td>
+            </tr>
+            <tr>
+                <td>Renaissance</td>
+                <td>Classical</td>
+                <td>20th Century</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="startButton" class="btn btn-primary">Get Started</button>
+    <p>Or jump straight to the</p>
+    <button id="quizButton" class="btn btn-secondary">Quiz</button>
+</div>
+
+{% endblock %}
