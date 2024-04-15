@@ -4,7 +4,6 @@ from flask import Response, request, jsonify, redirect, url_for
 import json
 app = Flask(__name__)
 
-current_id = 2
 data = json.load(open('data.json'))
 
 # ROUTES
