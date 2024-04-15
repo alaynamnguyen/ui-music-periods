@@ -51,5 +51,27 @@ function displayContent(data, id) {
 }
 
 $(document).ready(function () {
+    function add_interation(now) {
+        $.ajax({
+            type: "POST",
+            url: "/add_learn_interaction",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(now),
+            success: function (result) {
+                let newLen = result["length"];
+                // console.log("Recorded learn interaction #" + newLen);
+            },
+            error: function (request, status, error) {
+                console.log("Error");
+                console.log(request);
+                console.log(status);
+                console.log(error);
+            },
+        });
+    }
+    let now = new Date();
+    add_interation({ timestamp: now, pageUrl: "/learn/1" });
+
     displayContent(data, id);
 });
