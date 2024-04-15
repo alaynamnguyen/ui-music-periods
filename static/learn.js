@@ -18,6 +18,11 @@ function displayContent(data, id) {
             .append(audioElement);
         audioContainer.append(audioDiv);
     });
+
+    $("#learn-next").click(function () {
+        event.preventDefault();
+        window.location.href = content["next"];
+    });
 }
 
 $(document).ready(function () {

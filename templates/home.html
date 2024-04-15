@@ -1,12 +1,13 @@
 {% extends "layout.html" %} {% block content %}
 
-<script type="text/javascript"></script>
+<script
+    type="text/javascript"
+    src="{{ url_for('static', filename = 'home.js') }}"
+></script>
 
 <script>
     let data = {{data|tojson}}
-    console.log(data)
 </script>
-
 <div class="home">
     <h1>Learning Guide to Classical Music Eras</h1>
     <p>Practice the ability to identify classical music by period!</p>
