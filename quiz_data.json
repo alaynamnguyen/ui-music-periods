@@ -1,26 +1,32 @@
 {
     "1": {
         "audio": "https://piercegwang.github.io/columbia/COMSW4170/Medieval_1.wav",
-        "title": "Medieval"
+        "correct": "Medieval",
+        "incorrect": "Renaissance"
     },
     "2": {
         "audio": "https://piercegwang.github.io/columbia/COMSW4170/Medieval_2.wav",
-        "title": "Medieval"
+        "correct": "Medieval",
+        "incorrect": "Baroque"
     },
     "3": {
         "audio": "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_1.wav",
-        "title": "Renaissance"
+        "correct": "Renaissance",
+        "incorrect": "Medieval"
     },
     "4": {
         "audio": "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_2.wav",
-        "title": "Renaissance"
+        "correct": "Renaissance",
+        "incorrect": "Baroque"
     },
     "5": {
         "audio": "https://piercegwang.github.io/columbia/COMSW4170/Baroque_1.wav",
-        "title": "Baroque"
+        "correct": "Baroque",
+        "incorrect": "Renaissance"
     },
     "6": {
         "audio": "https://piercegwang.github.io/columbia/COMSW4170/Baroque_2.wav",
-        "title": "Baroque"
+        "correct": "Baroque",
+        "incorrect": "Medieval"
     }
 }
