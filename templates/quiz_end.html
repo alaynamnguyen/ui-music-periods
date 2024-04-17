@@ -1,0 +1,10 @@
+{% extends "layout.html" %} {% block content %}
+<div class="container text-center">
+  <h1>Quiz Completed</h1>
+  <p>Your final score is: {{ score }}</p>
+  <div>
+    <a href="/" class="btn btn-primary">Go to Main Page</a>
+    <a href="/restart_quiz" class="btn btn-secondary">Retake Quiz</a>
+  </div>
+</div>
+{% endblock %}

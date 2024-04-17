@@ -1,26 +1,42 @@
 {% extends "layout.html" %} {% block content %}
-
 <script
   type="text/javascript"
-  src="{{ url_for('static', filename = 'quiz.js') }}"
+  src="{{ url_for('static', filename='quiz.js') }}"
 ></script>
-
 <script>
-  let id = {{id|tojson}}
-  let data = {{data|tojson}}
+  let data = {{ data|tojson }};
 </script>
 
 <div id="quiz-container" class="container-fluid">
   <div class="d-flex justify-content-center">
-    <h1>Quiz - Comparison</h1>
+    <h1>Quiz - Music Period Identification</h1>
   </div>
   <div class="row d-flex justify-content-center">
-    <div class="col-3 text-center">a</div>
-    <div class="col-3 text-center">b</div>
-    <div class="col-3 text-center">c</div>
+    <div class="col-4 text-center">
+      <audio controls>
+        <source src="{{ data.audio }}" type="audio/wav" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="col-4 text-center" id="options-container">
+      <!-- Quiz options -->
+    </div>
+    <div class="col-4 text-center">
+      <p>Listen to the clip and select the correct music period.</p>
+    </div>
   </div>
-
-  <button></button>
+  <div class="row mt-4">
+    <div class="col-md-12 d-flex justify-content-center">
+      <div id="feedback-message">
+        <!-- FEEBDACK -->
+      </div>
+    </div>
+    <div class="col-md-12 d-flex justify-content-center">
+      <div id="navigation-button">
+        <!-- Next button -->
+      </div>
+    </div>
+  </div>
 </div>
 
 {% endblock %}
