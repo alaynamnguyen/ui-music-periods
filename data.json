@@ -1,29 +1,29 @@
 {
   "1": {
-      "id": 1,
-      "title": "Medieval",
-      "audio": [
-          "https://piercegwang.github.io/columbia/COMSW4170/Medieval_1.wav",
-          "https://piercegwang.github.io/columbia/COMSW4170/Medieval_2.wav"
-      ],
-      "next": "/learn/2"
+    "id": 1,
+    "title": "Medieval",
+    "audio": [
+      "https://piercegwang.github.io/columbia/COMSW4170/Medieval_1.wav",
+      "https://piercegwang.github.io/columbia/COMSW4170/Medieval_2.wav"
+    ],
+    "next": "/learn/2"
   },
   "2": {
-      "id": 2,
-      "title": "Renaissance",
-      "audio": [
-          "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_1.wav",
-          "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_2.wav"
-      ],
-      "next": "/learn/3"
+    "id": 2,
+    "title": "Renaissance",
+    "audio": [
+      "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_1.wav",
+      "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_2.wav"
+    ],
+    "next": "/learn/3"
   },
   "3": {
-      "id": 3,
-      "title": "Baroque",
-      "audio": [
-          "https://piercegwang.github.io/columbia/COMSW4170/Baroque_1.wav",
-          "https://piercegwang.github.io/columbia/COMSW4170/Baroque_2.wav"
-      ],
-      "next": "/learn/1"
+    "id": 3,
+    "title": "Baroque",
+    "audio": [
+      "https://piercegwang.github.io/columbia/COMSW4170/Baroque_1.wav",
+      "https://piercegwang.github.io/columbia/COMSW4170/Baroque_2.wav"
+    ],
+    "next": "/learn_end"
   }
 }

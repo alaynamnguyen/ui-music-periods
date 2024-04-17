@@ -24,7 +24,19 @@ def home():
 
 @app.route('/learn/<id>')
 def view(id=None):
+    id = int(id)
+    if id < 1 or id > len(data):
+        # Redirect to first learning page if out of range
+        return redirect(url_for('learn', id=1))
+    if id == len(data):
+        # Redirect to the learning end page
+        return redirect(url_for('learn_end'))
     return render_template('learn.html', id=id, data=data)
+
+
+@app.route('/learn_end')
+def learn_end():
+    return render_template('learn_end.html')
 
 
 @app.route('/restart_quiz')
