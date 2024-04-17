@@ -3,8 +3,8 @@
         "id": 1,
         "title": "Medieval",
         "audio": [
-            "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav",
-            "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"
+            "https://piercegwang.github.io/columbia/COMSW4170/Medieval_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/Medieval_2.wav"
         ],
         "next": "/learn/2"
     },
@@ -12,8 +12,8 @@
         "id": 2,
         "title": "Renaissance",
         "audio": [
-            "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav",
-            "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"
+            "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_2.wav"
         ],
         "next": "/learn/3"
     },
@@ -21,8 +21,8 @@
         "id": 3,
         "title": "Baroque",
         "audio": [
-            "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav",
-            "https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"
+            "https://piercegwang.github.io/columbia/COMSW4170/Baroque_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/Baroque_2.wav"
         ],
         "next": "/learn/1"
     }
