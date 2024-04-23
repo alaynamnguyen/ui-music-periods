@@ -41,9 +41,8 @@ def learn_end():
 
 @app.route('/restart_quiz')
 def restart_quiz():
-    global score
-    shuffle(quiz_questions)
-    score = 0
+    global results
+    results = {}  # Clear previous results
     return redirect(url_for('quiz', id=1))
 
 
@@ -63,9 +62,20 @@ def quiz(id):
 
 @app.route('/quiz_end')
 def quiz_end():
-    global score
-    return render_template('quiz_end.html', score=score)
-    # ajax for add.js
+    incorrect_questions = [
+        result for result in results.get('results', []) if not result['correct']
+    ]
+    # Include detailed info for rendering in the template
+    detailed_incorrect = []
+    for question in incorrect_questions:
+        # Assuming questionId matches index+1
+        question_data = quiz_questions[question['questionId'] - 1]
+        detailed_incorrect.append({
+            'audio': question_data['audio'],
+            # You might need to adjust this URL
+            'learn_more_url': f'/learn/{question["questionId"]}'
+        })
+    return render_template('quiz_end.html', score=len(results.get('results', [])) - len(incorrect_questions), incorrect_questions=detailed_incorrect)
 
 
 @app.route('/add_learn_interaction', methods=['GET', 'POST'])
@@ -82,16 +92,23 @@ def add_learn_interaction():
     return jsonify(length=numUserLearnInteractions)
 
 
+results = {}  # This will store results for each quiz session
+
+
 @app.route('/update_score', methods=['POST'])
 def update_score():
-    global score
+    global results
+    print(results)
     json_data = request.get_json()
-    is_correct = json_data['correct']
-    # Assuming you have a score tracking mechanism, update it here
-    # You can track score in the session or a simple global variable for simplicity
-    if is_correct:
-        score += 1
-    return jsonify(score=score)
+    question_id = json_data['questionId']
+    if 'results' not in results:
+        results['results'] = []
+    results['results'].append({
+        'questionId': question_id,
+        'selectedAnswer': json_data['selectedAnswer'],
+        'correct': json_data['correct']
+    })
+    return jsonify(success=True)
 
 
 if __name__ == '__main__':

@@ -8,12 +8,16 @@ $(document).ready(function () {
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
-  function sendAnswerData(isCorrect) {
+  function sendAnswerData(questionId, selectedAnswer, isCorrect) {
     $.ajax({
       url: "/update_score",
       type: "POST",
       contentType: "application/json",
-      data: JSON.stringify({ correct: isCorrect }),
+      data: JSON.stringify({
+        questionId: questionId,
+        selectedAnswer: selectedAnswer,
+        correct: isCorrect,
+      }),
       success: function (response) {
         console.log("Score updated", response);
       },
@@ -22,6 +26,7 @@ $(document).ready(function () {
       },
     });
   }
+
   function displayOptions() {
     let options = [data.correct, data.incorrect];
     shuffleArray(options);
@@ -52,7 +57,7 @@ $(document).ready(function () {
           }
           displayFeedback(isCorrect);
           updateNextButton(true);
-          sendAnswerData(isCorrect);
+          sendAnswerData(data.current_id, selectedAnswer, isCorrect);
         });
       $("#options-container").append(button);
     });
