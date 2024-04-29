@@ -9,9 +9,10 @@
     let data = {{data|tojson}}
 </script>
 <div class="home">
-    <h1>Learning Guide to Classical Music Eras</h1>
-    <p>Practice the ability to identify classical music by period!</p>
-    <table class="music-eras-table">
+    <span class="playfair home-title">Learn Classical Music Eras</span>
+    <p>Identify classical music by period!</p>
+    <br>
+    <table class="music-eras-table playfair">
         <tbody>
             <tr>
                 <td>Medieval</td>
@@ -25,9 +26,19 @@
             </tr>
         </tbody>
     </table>
-    <button id="startButton" class="btn btn-primary">Get Started</button>
-    <p>Or jump straight to the</p>
-    <button id="quizButton" class="btn btn-secondary">Quiz</button>
+    <div class="home-buttons">
+        <div class="button-cards">
+            <img src="https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg">
+            <br><br>
+            <button id="startButton" class="home-button"><span class="home-button-text">Start Learning</span></button>
+        </div>
+        <div class="spacer"></div>
+        <div class="button-cards">
+            <img src="https://tarangkd2113.github.io/ui-project-resources/home_page_quiz.png">
+            <br><br>
+            <button id="quizButton" class="home-button"><span class="home-button-text">Quiz</span></button>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

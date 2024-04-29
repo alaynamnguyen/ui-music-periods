@@ -9,10 +9,14 @@
 }
 .home p {
     font-size: 24px;
-    color: gray;
+    color: #595959;
 }
-#startButton {
-    margin-bottom: 15px;
+.playfair {
+    font-family: 'Playfair Display';
+}
+.home-title {
+    font-size: 32pt;
+    font-weight: bolder;
 }
 .music-eras-table {
     border-collapse: collapse;
@@ -23,9 +27,43 @@
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
+    color: #666666;
+    font-size: 14pt;
+    padding-inline: 20px;
 }
 .music-eras-table th {
     background-color: #f0f0f0;
+}
+.home-buttons {
+    padding: 20px;
+}
+.button-cards {
+    height: fit-content;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    padding: 15px;
+    display: inline-block;
+}
+.home-button {
+    background-color: #7c000aff;
+    border: 1px solid #595959;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 7px;
+}
+.home-button-text {
+    font-size: 16pt;
+}
+.home-buttons img {
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;;
+}
+.spacer {
+    display: inline-block;
+    width: 50px;
 }
 
 /* LEARN PAGE */
