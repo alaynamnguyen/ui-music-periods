@@ -1,48 +1,53 @@
-function displayContent(data, id) {
-    //insert data for this page
-    let content = data[id];
-    $("#learn-title").text(content["title"] + " Period");
-
+function displayAudioContent(content, i) {
     const audioContainer = $("#audioFiles");
     audioContainer.empty();
     let audios = content["audio"];
+
+    let audioUrl = audios[i];
+    let audioElement = $("<audio>").attr("controls", true);
+
+    let sourceElement = $("<source>")
+        .attr("src", audioUrl)
+        .attr("type", "audio/wav");
+
+    audioElement.append(sourceElement);
+
+    // TODO: update text and title to the data
+    let fullText =
+        i +
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+    let titleText = "Title: todo update when data is ready";
+
+    let textBox = $("<div>").addClass("learn-text").text(fullText);
+    let titleBox = $("<div>").addClass("learn-title").text(titleText);
+
+    let audioDiv = $("<div>")
+        .addClass("audio-wrapper")
+        .append(audioElement)
+        .append(textBox)
+        .append(titleBox);
+
+    audioContainer.append(audioDiv);
+}
+
+function displayContent(data, id) {
+    //insert data for this page
+    let content = data[id];
+    let audios = content["audio"];
+    $("#learn-title").text(content["title"] + " Period");
+    displayAudioContent(content, 0);
+
     for (let i = 0; i < audios.length; i++) {
-        let audioUrl = audios[i];
-        let audioElement = $("<audio>").attr("controls", true);
+        let audioButton = $("<button>")
+            .addClass("learn-button")
+            .text("Audio " + (i + 1))
+            .attr("data-index", i)
+            .click(function () {
+                displayAudioContent(content, i);
+            });
 
-        let sourceElement = $("<source>")
-            .attr("src", audioUrl)
-            .attr("type", "audio/wav");
-
-        audioElement.append(sourceElement);
-
-        let fullText =
-            i +
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-
-        let textBox = $("<div>")
-            .addClass("hover-text")
-            .text("Hover for info")
-            .data("full-text", fullText);
-
-        let audioDiv = $("<div>")
-            .addClass("audio-wrapper")
-            .append(audioElement)
-            .append(textBox);
-
-        audioContainer.append(audioDiv);
+        $("#learn-buttons").append(audioButton);
     }
-
-    $(".audio-wrapper").hover(
-        function () {
-            $(this)
-                .find(".hover-text")
-                .text($(this).find(".hover-text").data("full-text"));
-        },
-        function () {
-            $(this).find(".hover-text").text("Hover for info");
-        }
-    );
 
     $("#learn-next").click(function () {
         event.preventDefault();
