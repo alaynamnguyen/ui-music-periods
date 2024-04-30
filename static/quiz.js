@@ -28,14 +28,21 @@ $(document).ready(function () {
   }
 
   function displayOptions() {
-    let options = [data.correct, data.incorrect];
+    let options = [
+      "Medieval",
+      "Baroque",
+      "Romantic",
+      "Renaissance",
+      "Classical",
+      " 20th Century",
+    ];
     shuffleArray(options);
 
     $("#options-container").empty();
 
     options.forEach(function (option) {
       let button = $("<button>")
-        .addClass("btn btn-outline-primary btn-block quiz-option")
+        .addClass("btn btn-outline-secondary-dark btn-block quiz-option")
         .text(option)
         .attr("data-answer", option)
         .click(function () {
@@ -44,13 +51,17 @@ $(document).ready(function () {
           const correctAnswer = data.correct;
           const isCorrect = selectedAnswer === correctAnswer;
           if (isCorrect) {
-            $(this).removeClass("btn-outline-primary").addClass("btn-success");
+            $(this)
+              .removeClass("btn-outline-secondary-dark")
+              .addClass("btn-success");
           } else {
-            $(this).removeClass("btn-outline-primary").addClass("btn-danger");
+            $(this)
+              .removeClass("btn-outline-secondary-dark")
+              .addClass("btn-danger");
             $(".quiz-option").each(function () {
               if ($(this).data("answer") === correctAnswer) {
                 $(this)
-                  .removeClass("btn-outline-primary")
+                  .removeClass("btn-outline-secondary-dark")
                   .addClass("btn-success");
               }
             });
@@ -83,7 +94,7 @@ $(document).ready(function () {
 
   // Initialize Next/Skip button in its own div
   $("#navigation-button").append(
-    $("<button>").attr("id", "next-button").addClass("btn btn-secondary mt-3")
+    $("<button>").attr("id", "next-button").addClass("btn red-button mt-3")
   );
 
   updateNextButton(false); // Initially set to "Skip" as no answer has been selected yet

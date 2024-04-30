@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $("#quizButton").click(function () {
-        event.preventDefault();
-        window.location.href = "/quiz/1";
-    });
+  $("#quizButton").click(function () {
+    event.preventDefault();
+    window.location.href = "/restart_quiz";
+  });
 });

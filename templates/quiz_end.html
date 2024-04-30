@@ -1,31 +1,55 @@
 {% extends "layout.html" %} {% block content %}
-<div class="container text-center">
-  <h1>Quiz Completed</h1>
-  <p>Your final score is: {{ score }}</p>
-  {% if incorrect_questions %}
-  <h2>Review Incorrect Answers</h2>
-  <div class="mt-4">
-    {% for question in incorrect_questions %}
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md-4">
-        <audio controls>
-          <source src="{{ question.audio }}" type="audio/wav" />
-          Your browser does not support the audio element.
-        </audio>
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'learn_end.js') }}"
+></script>
+<div class="container-fluid text-center mt-2">
+  <h1 class="playfair">Quiz Completed!</h1>
+  <h4>Score: {{ score }}</h4>
+
+  <div class="row mt-5">
+    <!-- Left column for audio and learning buttons -->
+    <div class="col-md-9">
+      {% if incorrect_questions %}
+      <h2 class="subtitle">These are some questions you missed or skipped</h2>
+      <div class="mt-4">
+        {% for question in incorrect_questions %}
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <audio controls>
+              <source src="{{ question.audio }}" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-md-6">
+            <a href="{{ question.learn_more_url }}" class="btn red-button"
+              >Review {{question.correct}}</a
+            >
+          </div>
+        </div>
+        <hr />
+        {% endfor %}
       </div>
-      <div class="col-md-2">
-        <a href="{{ question.learn_more_url }}" class="btn btn-info"
-          >Learn More</a
+      {% endif %}
+    </div>
+
+    <!-- Right column for the sticky Retake Quiz button -->
+    <div class="col-md-3 d-flex flex-column align-items-center">
+      <div class="sticky-top" style="top: 30px">
+        <div class="button-cards">
+          <img
+            src="https://tarangkd2113.github.io/ui-project-resources/home_page_quiz.png"
+          />
+          <br /><br />
+          <button id="quizButton" class="home-button">
+            <span class="home-button-text">Retake the quiz</span>
+          </button>
+        </div>
+        <a href="/" class="btn btn-outline-secondary-dark mt-2"
+          >Go to Main Page</a
         >
       </div>
     </div>
-    <hr />
-    {% endfor %}
-  </div>
-  {% endif %}
-  <div class="mt-4">
-    <a href="/" class="btn btn-primary">Go to Main Page</a>
-    <a href="/restart_quiz" class="btn btn-secondary">Retake Quiz</a>
   </div>
 </div>
 {% endblock %}

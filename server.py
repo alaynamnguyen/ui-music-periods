@@ -72,7 +72,7 @@ def quiz_end():
         question_data = quiz_questions[question['questionId'] - 1]
         detailed_incorrect.append({
             'audio': question_data['audio'],
-            # You might need to adjust this URL
+            'correct': question_data['correct'],
             'learn_more_url': f'/learn/{question["questionId"]}'
         })
     return render_template('quiz_end.html', score=len(results.get('results', [])) - len(incorrect_questions), incorrect_questions=detailed_incorrect)
