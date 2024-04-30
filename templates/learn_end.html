@@ -1,11 +1,49 @@
 {% extends "layout.html" %} {% block content %}
-<div class="container text-center">
-  <h1>Learning Module Completed</h1>
-  <p>Congratulations on completing this learning module!</p>
-  <div>
-    <a href="/" class="btn btn-primary">Return to Home Page</a>
-    <a href="/learn/1" class="btn btn-secondary">Review Learning Material</a>
-    <a href="/quiz/1" class="btn btn-success">Take Quiz</a>
-  </div>
+
+<script
+    type="text/javascript"
+    src="{{ url_for('static', filename = 'learn_end.js') }}"
+></script>
+
+<div id="learn-end-container" class="container text-center">
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div id="learn-title" class="playfair home-title">
+                Learning Module Completed
+            </div>
+            <div class="subtitle">Congratulations!</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div class="home-buttons">
+                <div class="button-cards">
+                    <img
+                        src="https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg"
+                    />
+                    <br /><br />
+                    <button id="startButton" class="home-button">
+                        <span class="home-button-text">Start Learning</span>
+                    </button>
+                </div>
+                <div class="spacer"></div>
+                <div class="button-cards">
+                    <img
+                        src="https://tarangkd2113.github.io/ui-project-resources/home_page_quiz.png"
+                    />
+                    <br /><br />
+                    <button id="quizButton" class="home-button">
+                        <span class="home-button-text">Try the Quiz</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <a href="/learn/1" class="btn btn-secondary"
+            >Review Learning Material</a
+        >
+    </div> -->
 </div>
 {% endblock %}

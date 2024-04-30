@@ -1,3 +1,15 @@
+/* NAV BAR */
+.navbar {
+    background-color: #423e3bff;
+}
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+    color: white;
+}
 /* HOME PAGE */
 .home {
     display: flex;
@@ -7,12 +19,13 @@
     height: 90vh;
     text-align: center;
 }
-.home p {
+.home p,
+.subtitle {
     font-size: 24px;
     color: #595959;
 }
 .playfair {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
 }
 .home-title {
     font-size: 32pt;
@@ -59,7 +72,7 @@
     height: 200px;
     width: 200px;
     margin: 0px;
-    padding: 0px;;
+    padding: 0px;
 }
 .spacer {
     display: inline-block;
@@ -67,6 +80,10 @@
 }
 
 /* LEARN PAGE */
+#learn-container,
+#learn-end-container {
+    margin-top: 40px;
+}
 #learn-title {
     font-weight: bold;
     font-size: 36px;
