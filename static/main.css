@@ -121,3 +121,25 @@ audio {
     height: 100px;
     text-align: center;
 }
+/* LEARN END */
+.learn-end-options {
+    margin-top: 40px;
+}
+.quiz-button {
+    display: inline-block;
+    width: 200px;
+    color: #595959;
+    text-decoration: none;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    border-radius: 7px;
+    padding: 2px 0;
+    margin: 5px 0;
+}
+
+/* Hover styling for quiz buttons */
+.quiz-button:hover {
+    background-color: #ddddddff;
+    color: #595959;
+    text-decoration: none;
+}
