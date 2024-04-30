@@ -12,7 +12,7 @@ function displayAudioContent(content, i) {
 
     audioElement.append(sourceElement);
 
-    // TODO: update text and title to the data
+    // TODO: update text and title and image to the data
     let fullText =
         i +
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
@@ -28,6 +28,10 @@ function displayAudioContent(content, i) {
         .append(titleBox);
 
     audioContainer.append(audioDiv);
+
+    // $("#learn-img").src(
+    //     "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg"
+    // );
 }
 
 function displayContent(data, id) {
