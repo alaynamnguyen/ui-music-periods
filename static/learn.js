@@ -2,6 +2,8 @@ function displayAudioContent(content, i) {
     const audioContainer = $("#audioFiles");
     audioContainer.empty();
     let audios = content["audio"];
+    let audioTitles = content["audioTitles"];
+    let audioDescriptions = content["audioDescriptions"];
 
     let audioUrl = audios[i];
     let audioElement = $("<audio>").attr("controls", true);
@@ -12,11 +14,8 @@ function displayAudioContent(content, i) {
 
     audioElement.append(sourceElement);
 
-    // TODO: update text and title and image to the data
-    let fullText =
-        i +
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
-    let titleText = "Title: todo update when data is ready";
+    let fullText = audioDescriptions[i];
+    let titleText = audioTitles[i];
 
     let textBox = $("<div>").addClass("learn-text").text(fullText);
     let titleBox = $("<div>").addClass("learn-title").text(titleText);
@@ -28,18 +27,14 @@ function displayAudioContent(content, i) {
         .append(titleBox);
 
     audioContainer.append(audioDiv);
-
-    // $("#learn-img").src(
-    //     "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg"
-    // );
 }
 
 function displayContent(data, id) {
-    //insert data for this page
     let content = data[id];
     let audios = content["audio"];
     $("#learn-title").text(content["title"] + " Period");
-    displayAudioContent(content, 0);
+    $("#learn-img").attr("src", content["image"]);
+    displayAudioContent(content, 0); // display first audio
 
     for (let i = 0; i < audios.length; i++) {
         let audioButton = $("<button>")

@@ -1,80 +1,182 @@
 {
-  "1": {
-    "id": 1,
-    "title": "Medieval",
-    "audio": [
-      "https://piercegwang.github.io/columbia/COMSW4170/medieval_1.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/medieval_2.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/medieval_3.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/medieval_4.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/medieval_5.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/medieval_6.wav"
-    ],
-    "next": "/learn/2"
-  },
-  "2": {
-    "id": 2,
-    "title": "Renaissance",
-    "audio": [
-      "https://piercegwang.github.io/columbia/COMSW4170/renaissance_1.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/renaissance_2.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/renaissance_3.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/renaissance_4.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/renaissance_5.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/renaissance_6.wav"
-    ],
-    "next": "/learn/3"
-  },
-  "3": {
-    "id": 3,
-    "title": "Baroque",
-    "audio": [
-      "https://piercegwang.github.io/columbia/COMSW4170/baroque_1.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/baroque_2.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/baroque_3.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/baroque_4.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/baroque_5.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/baroque_6.wav"
-    ],
-    "next": "/learn/4"
-  }
-  "4": {
-    "id": 4,
-    "title": "Classical",
-    "audio": [
-      "https://piercegwang.github.io/columbia/COMSW4170/classical_1.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/classical_2.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/classical_3.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/classical_4.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/classical_5.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/classical_6.wav"
-    ],
-    "next": "/learn/5"
-  }
-  "5": {
-    "id": 5,
-    "title": "Romantic",
-    "audio": [
-      "https://piercegwang.github.io/columbia/COMSW4170/romantic_1.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/romantic_2.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/romantic_3.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/romantic_4.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/romantic_5.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/romantic_6.wav"
-    ],
-    "next": "/learn/6"
-  }
-  "6": {
-    "id": 6,
-    "title": "20th Century",
-    "audio": [
-      "https://piercegwang.github.io/columbia/COMSW4170/20th_century_1.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/20th_century_2.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/20th_century_6.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/20th_century_4.wav"
-      "https://piercegwang.github.io/columbia/COMSW4170/20th_century_5.wav",
-      "https://piercegwang.github.io/columbia/COMSW4170/20th_century_6.wav"
-    ],
-    "next": "/learn_end"
-  }
+    "1": {
+        "id": 1,
+        "title": "Medieval",
+        "audio": [
+            "https://piercegwang.github.io/columbia/COMSW4170/medieval_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/medieval_2.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/medieval_3.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/medieval_4.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/medieval_5.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/medieval_6.wav"
+        ],
+        "audioTitles": [
+            "TempTitle1",
+            "TempTitle2",
+            "TempTitle3",
+            "TempTitle4",
+            "TempTitle5",
+            "TempTitle6"
+        ],
+        "audioDescriptions": [
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription"
+        ],
+        "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
+        "next": "/learn/2"
+    },
+    "2": {
+        "id": 2,
+        "title": "Renaissance",
+        "audio": [
+            "https://piercegwang.github.io/columbia/COMSW4170/renaissance_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/renaissance_2.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/renaissance_3.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/renaissance_4.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/renaissance_5.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/renaissance_6.wav"
+        ],
+        "audioTitles": [
+            "TempTitle1",
+            "TempTitle2",
+            "TempTitle3",
+            "TempTitle4",
+            "TempTitle5",
+            "TempTitle6"
+        ],
+        "audioDescriptions": [
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription"
+        ],
+        "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
+        "next": "/learn/3"
+    },
+    "3": {
+        "id": 3,
+        "title": "Baroque",
+        "audio": [
+            "https://piercegwang.github.io/columbia/COMSW4170/baroque_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/baroque_2.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/baroque_3.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/baroque_4.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/baroque_5.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/baroque_6.wav"
+        ],
+        "audioTitles": [
+            "TempTitle1",
+            "TempTitle2",
+            "TempTitle3",
+            "TempTitle4",
+            "TempTitle5",
+            "TempTitle6"
+        ],
+        "audioDescriptions": [
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription"
+        ],
+        "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
+        "next": "/learn/4"
+    },
+    "4": {
+        "id": 4,
+        "title": "Classical",
+        "audio": [
+            "https://piercegwang.github.io/columbia/COMSW4170/classical_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/classical_2.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/classical_3.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/classical_4.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/classical_5.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/classical_6.wav"
+        ],
+        "audioTitles": [
+            "TempTitle1",
+            "TempTitle2",
+            "TempTitle3",
+            "TempTitle4",
+            "TempTitle5",
+            "TempTitle6"
+        ],
+        "audioDescriptions": [
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription"
+        ],
+        "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
+        "next": "/learn/5"
+    },
+    "5": {
+        "id": 5,
+        "title": "Romantic",
+        "audio": [
+            "https://piercegwang.github.io/columbia/COMSW4170/romantic_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/romantic_2.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/romantic_3.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/romantic_4.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/romantic_5.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/romantic_6.wav"
+        ],
+        "audioTitles": [
+            "TempTitle1",
+            "TempTitle2",
+            "TempTitle3",
+            "TempTitle4",
+            "TempTitle5",
+            "TempTitle6"
+        ],
+        "audioDescriptions": [
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription"
+        ],
+        "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
+        "next": "/learn/6"
+    },
+    "6": {
+        "id": 6,
+        "title": "20th Century",
+        "audio": [
+            "https://piercegwang.github.io/columbia/COMSW4170/20th_century_1.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/20th_century_2.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/20th_century_6.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/20th_century_4.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/20th_century_5.wav",
+            "https://piercegwang.github.io/columbia/COMSW4170/20th_century_6.wav"
+        ],
+        "audioTitles": [
+            "TempTitle1",
+            "TempTitle2",
+            "TempTitle3",
+            "TempTitle4",
+            "TempTitle5",
+            "TempTitle6"
+        ],
+        "audioDescriptions": [
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription",
+            "TempDescription"
+        ],
+        "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
+        "next": "/learn_end"
+    }
 }
