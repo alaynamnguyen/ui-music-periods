@@ -2,34 +2,64 @@
   "quiz_questions": [
     {
       "id": 1,
-      "audio": "https://piercegwang.github.io/columbia/COMSW4170/Medieval_1.wav",
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/medieval_5.wav",
       "correct": "Medieval"
     },
     {
       "id": 2,
-      "audio": "https://piercegwang.github.io/columbia/COMSW4170/Medieval_2.wav",
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/medieval_6.wav",
       "correct": "Medieval",
       "incorrect": "Baroque"
     },
     {
       "id": 3,
-      "audio": "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_1.wav",
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/renaissance_5.wav",
       "correct": "Renaissance"
     },
     {
       "id": 4,
-      "audio": "https://piercegwang.github.io/columbia/COMSW4170/Renaissance_2.wav",
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/renaissance_6.wav",
       "correct": "Renaissance"
     },
     {
       "id": 5,
-      "audio": "https://piercegwang.github.io/columbia/COMSW4170/Baroque_1.wav",
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/baroque_5.wav",
       "correct": "Baroque"
     },
     {
       "id": 6,
-      "audio": "https://piercegwang.github.io/columbia/COMSW4170/Baroque_2.wav",
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/baroque_6.wav",
       "correct": "Baroque"
+    },
+    {
+      "id": 7,
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/classical_5.wav",
+      "correct": "Classical"
+    },
+    {
+      "id": 8,
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/classical_6.wav",
+      "correct": "Classical"
+    },
+    {
+      "id": 9,
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/romantic_5.wav",
+      "correct": "Romantic"
+    },
+    {
+      "id": 10,
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/romantic_6.wav",
+      "correct": "Romantic"
+    },
+    {
+      "id": 11,
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/20th_century_5.wav",
+      "correct": "20th Century"
+    },
+    {
+      "id": 12,
+      "audio": "https://piercegwang.github.io/columbia/COMSW4170/20th_century_6.wav",
+      "correct": "20th Century"
     }
   ]
 }
