@@ -40,6 +40,7 @@ def learn_end():
 def restart_quiz():
     global results
     results = {}  # Clear previous results
+    shuffle(quiz_questions)
     return redirect(url_for('quiz', id=1))
 
 
@@ -80,7 +81,7 @@ def quiz_end():
         })
 
     print(detailed_incorrect)
-    return render_template('quiz_end.html', score=len(results.get('results', [])) - len(incorrect_questions), incorrect_questions=detailed_incorrect)
+    return render_template('quiz_end.html', score=len(results.get('results', [])) - len(incorrect_questions), incorrect_questions=detailed_incorrect, total_questions=len(results.get('results', [])))
 
 
 @app.route('/add_learn_interaction', methods=['GET', 'POST'])
