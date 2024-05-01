@@ -19,12 +19,12 @@
             "Domine quis habitabit - Sanctus Quidem Triticum [France, circa 1253-1296]"
         ],
         "audioDescriptions": [
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription"
+            "Gregorian chant is most often in unison (all voices singing the same notes) and consists of very open vowels ('aah' instead of 'ew' or 'me').",
+            "Gregorian chant is most often in unison (all voices singing the same notes) and consists of very open vowels ('aah' instead of 'ew' or 'me').",
+            "Gregorian chant is most often in unison (all voices singing the same notes) and consists of very open vowels ('aah' instead of 'ew' or 'me').",
+            "Gregorian chant is most often in unison (all voices singing the same notes) and consists of very open vowels ('aah' instead of 'ew' or 'me').",
+            "Gregorian chant is most often in unison (all voices singing the same notes) and consists of very open vowels ('aah' instead of 'ew' or 'me').",
+            "Gregorian chant is most often in unison (all voices singing the same notes) and consists of very open vowels ('aah' instead of 'ew' or 'me')."
         ],
         "image": "https://tarangkd2113.github.io/ui-project-resources/home_page_learning.jpg",
         "next": "/learn/2"
@@ -49,12 +49,12 @@
             "La Pastorella Si Leva"
         ],
         "audioDescriptions": [
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription"
+            "The renaissance period is characterized by a kazoo-like timbre to the instruments, creating an atmosphere that is suitable to the renaissance court. It also tends to have more variation in voices, especially in comparison to gregorian chant.",
+            "The renaissance period is characterized by a kazoo-like timbre to the instruments, creating an atmosphere that is suitable to the renaissance court. It also tends to have more variation in voices, especially in comparison to gregorian chant.",
+            "The renaissance period is characterized by a kazoo-like timbre to the instruments, creating an atmosphere that is suitable to the renaissance court. It also tends to have more variation in voices, especially in comparison to gregorian chant.",
+            "The renaissance period is characterized by a kazoo-like timbre to the instruments, creating an atmosphere that is suitable to the renaissance court. It also tends to have more variation in voices, especially in comparison to gregorian chant.",
+            "The renaissance period is characterized by a kazoo-like timbre to the instruments, creating an atmosphere that is suitable to the renaissance court. It also tends to have more variation in voices, especially in comparison to gregorian chant.",
+            "The renaissance period is characterized by a kazoo-like timbre to the instruments, creating an atmosphere that is suitable to the renaissance court. It also tends to have more variation in voices, especially in comparison to gregorian chant."
         ],
         "image": "https://www.ducksters.com/history/renaissance/music_instrument.jpg",
         "next": "/learn/3"
@@ -73,18 +73,22 @@
         "audioTitles": [
             "Georg Philipp Telemann - Burlesque de Quixotte TWV 55G10: III",
             "Vivaldi Concerto for Strings in G major, RV 150: II. Largo",
+<<<<<<< HEAD
             "Vivaldi Concerto for Strings in G major \"Alla Rustica\", RV 151: I. Presto",
+=======
+            "Vivaldi Concerto for Strings in G major 'Alla Rustica', RV 151: I. Presto",
+>>>>>>> b8648e5 (added work descriptions)
             "Bach Partita for Violin Solo No. 1 in B Minor, BWV 1002: II. Double",
             "Bach Sonata for Violin Solo No. 2 in A Minor, BWV 1003: IV. Allegro",
             "Bach Partita for Violin Solo No. 3 in E Major, BWV 1006: III. Gavotte En Rondeau"
         ],
         "audioDescriptions": [
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription"
+            "Just because it's baroque does not mean it's always calm! This one is very lively, and reminds one of a horse galloping along the riverside. It has a light and airy timbre, which—though not always the case—is very indicative of the baroque period.",
+            "The slow but light quality to the timbre hints to an emotional levity which is very indicative of the baroque period.",
+            "The light quality to the timbre and harmony hints to an emotional levity which is very indicative of the baroque period.",
+            "This piece exhibits another aspect of the baroque period: simplicity. Even within simplicity, there is room for beauty and layering complexity. However, at its very core, the melodic lines in baroque music are simple and elegant.",
+            "This piece exhibits another aspect of the baroque period: simplicity. Even within simplicity, there is room for beauty and layering complexity. However, at its very core, the melodic lines in baroque music are simple and elegant.",
+            "This piece exhibits another aspect of the baroque period: simplicity. Even within simplicity, there is room for beauty and layering complexity. However, at its very core, the melodic lines in baroque music are simple and elegant."
         ],
         "image": "https://wmich.edu/musicgradexamprep/images/xBaroquePicture.jpg.pagespeed.ic.4McUOcvyym.jpg",
         "next": "/learn/4"
@@ -101,20 +105,20 @@
             "https://piercegwang.github.io/columbia/COMSW4170/classical_6.wav"
         ],
         "audioTitles": [
-            "Wolfgang Amadeus Mozart - Piano Concerto No 21  Andante",
-            "Händel-Violin Sonata in D Major Op. 1 No. 4 HWV371",
+            "Mozart Piano Concerto No 21: II. Andante",
+            "Händel Violin Sonata in D Major Op. 1 No. 4 HWV371",
             "Mozart Eine Kleine Nachtmusik, K. 525: I. Allegro",
             "Mozart Symphony No 35 in D major, K. 385 (Haffner Symphony): IV. Presto",
             "Mozart String Quartet No. 23 in F major, K. 590: IV. Allegro",
             "Mozart String Quartet No. 20 in D major, K. 499: II. Menuetto and Trio. Allegretto"
         ],
         "audioDescriptions": [
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription"
+            "The dawn of the classical era solidified the presence of the modern orchestra. Simplicity is still key in the classical era. However, longer and more connected melodic phrases are particularly indicative of the classical era.",
+            "Simplicity is still key in the classical era. However, longer and more connected melodic phrases are particularly indicative of the classical era.",
+            "The dawn of the classical era solidified the presence of the modern orchestra. Everyone knows this piece--and now you know it's Mozart!",
+            "The dawn of the classical era solidified the presence of the modern orchestra. Fast and cute--much of Mozart's music described in two words. Mozart was a playful man, and his music exhibited that character very well.",
+            "The dawn of the classical era solidified the presence of the modern string quartet. Fast and cute--much of Mozart's music described in two words. Mozart was a playful man, and his music exhibited that character very well.",
+            "The dawn of the classical era solidified the presence of the modern string quartet. There's a dance-like quality to this piece, but it is still rather distinct from the court-like dancing that one might see in the baroque period."
         ],
         "image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mozart_family_crop.jpg",
         "next": "/learn/5"
@@ -139,12 +143,12 @@
             "Beethoven String Quartet No.11 in F Minor, Op.95, ‘’Serioso’’: I. Allegro con brio"
         ],
         "audioDescriptions": [
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription"
+            "Love, reminiscence, and passion! The romantic era embraces the depth of human emotion and the pain of life.",
+            "Beauty--romantic period classical music is as cheesy as you can get. Imagine someone in a play or movie pouring their heart out to their love interest with this as a backing track!",
+            "Drama and intrigue--the romantic period embraced all sorts of complex emotions. This piece in particular reveals some of the unsettled urgency one might feel during a particularly intense moment in life.",
+            "Sudden and often dynamic changes (loud to soft or soft to loud) are quite indicative of the romantic period, and are in particular a tool which Beethoven uses extensively to create interesting tension in his music.",
+            "Much of romantic music has a singing quality to it. This Beethoven String Quartet, for example, has is named "Andante Cantabile" which means that it should be played at a walking speed with a singing quality—as if walking through central park reminiscing about a boy/girl one is infatuated with.",
+            "Drama and intrigue--the romantic period embraced all sorts of complex emotions. This piece in particular reveals some of the unsettled urgency one might feel during a particularly intense (and possibly angry) moment in life."
         ],
         "image": "https://bigsiteofhistory.com/wp-content/uploads/2022/04/music-and-the-romantic-period-romanticism-reaction-and-revolution.jpg",
         "next": "/learn/6"
@@ -169,12 +173,12 @@
             "Shostakovich String Quartet No 8"
         ],
         "audioDescriptions": [
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription",
-            "TempDescription"
+            "Classical music sort of went crazy in the 20th century... from more romantic-like music to completely atonal (very dissonant/'bad sounding') music, the world of classical music became exponentially more diverse. This quartet is aggressive and much more dissonant than the music that came before it.",
+            "20th century classical composers also began to experiment with rhythm, finding new ways to bend the rules and force violinists in the orchestra to count—or rather, new ways to torture them...",
+            "20th century classical composers played fast and loose with their audiences emotions. This piece in particular changes very quickly between rhythms, highlighting the growing intensity that Stravinsky wanted the listener to feel.",
+            "A nightmare to play, this piece by Ligeti in the 20th century focuses more on the motion and direction of the pitches, rather than the individual pitches themselves. It's not about where you are, but where you're going...",
+            "More tonal than we've seen before, this violin concerto by Khatchaturian is drama in a nutshell. It might be a harder one to discern, but the harmonies hint to a period post-romantic... see if you can catch it!",
+            "From distraught and grieving to angrily pounding and shouting, this piece by Shostakovich represents all of his internal and external struggles living as an artist under Stalin's rule during World War II. Again, this piece is less about the melody and is instead more focused on the texture and atmosphere."
         ],
         "image": "https://i0.wp.com/theimaginativeconservative.org/wp-content/uploads/2023/01/bright_Skrjabin_and_Kussewitzky_by_Sterl.jpg?ssl=1",
         "next": "/learn_end"
