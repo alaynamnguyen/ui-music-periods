@@ -28,9 +28,6 @@ def view(id=None):
     if id < 1 or id > len(data):
         # Redirect to first learning page if out of range
         return redirect(url_for('learn', id=1))
-    if id == len(data):
-        # Redirect to the learning end page
-        return redirect(url_for('learn_end'))
     return render_template('learn.html', id=id, data=data)
 
 
