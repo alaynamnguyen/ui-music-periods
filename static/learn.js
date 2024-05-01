@@ -30,13 +30,14 @@ function displayAudioContent(content, i) {
 }
 
 function displayContent(data, id) {
+    const limitAudioLength = 4;
     let content = data[id];
     let audios = content["audio"];
     $("#learn-title").text(content["title"] + " Period");
     $("#learn-img").attr("src", content["image"]);
     displayAudioContent(content, 0); // display first audio
 
-    for (let i = 0; i < audios.length; i++) {
+    for (let i = 0; i < limitAudioLength; i++) {
         let audioButton = $("<button>")
             .addClass("learn-button")
             .text("Audio " + (i + 1))
