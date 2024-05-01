@@ -1,44 +1,44 @@
 {% extends "layout.html" %} {% block content %}
 <script
-  type="text/javascript"
-  src="{{ url_for('static', filename='quiz.js') }}"
+    type="text/javascript"
+    src="{{ url_for('static', filename='quiz.js') }}"
 ></script>
 <script>
-  let data = {{ data|tojson }};
+    let data = {{ data|tojson }};
 </script>
 
 <div id="quiz-container" class="container-fluid">
-  <div class="d-flex justify-content-center text-center playfair mb-5">
-    <h1>Quiz</h1>
-  </div>
-  <div class="row d-flex justify-content-center">
-    <!-- Left column for instructions and audio -->
-    <div class="col-md-6 mt-5 text-center">
-      <h4 class="subtitle">
-        Listen to the clip and select the correct music period.
-      </h4>
-      <audio controls>
-        <source src="{{ data.audio }}" type="audio/wav" />
-        Your browser does not support the audio element.
-      </audio>
+    <div class="d-flex justify-content-center text-center playfair mb-5">
+        <div id="quiz-title" class="playfair home-title">Quiz</div>
     </div>
-    <!-- Right column for options -->
-    <div class="col-md-6 text-center" id="options-container">
-      <!-- Quiz options will be dynamically filled -->
+    <div class="row d-flex justify-content-center">
+        <!-- Left column for instructions and audio -->
+        <div class="col-md-6 mt-5 text-center">
+            <h4 class="subtitle">
+                Listen to the clip and select the correct music period.
+            </h4>
+            <audio controls>
+                <source src="{{ data.audio }}" type="audio/wav" />
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!-- Right column for options -->
+        <div class="col-md-6 text-center" id="options-container">
+            <!-- Quiz options will be dynamically filled -->
+        </div>
     </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-md-12 d-flex justify-content-center">
-      <div id="feedback-message">
-        <!-- Feedback messages will be displayed here -->
-      </div>
+    <div class="row mt-4">
+        <div class="col-md-12 d-flex justify-content-center">
+            <div id="feedback-message">
+                <!-- Feedback messages will be displayed here -->
+            </div>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center">
+            <div id="navigation-button">
+                <!-- Navigation buttons (e.g., 'Next' button) -->
+            </div>
+        </div>
     </div>
-    <div class="col-md-12 d-flex justify-content-center">
-      <div id="navigation-button">
-        <!-- Navigation buttons (e.g., 'Next' button) -->
-      </div>
-    </div>
-  </div>
 </div>
 
 {% endblock %}

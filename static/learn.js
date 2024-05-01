@@ -43,6 +43,8 @@ function displayContent(data, id) {
             .attr("data-index", i)
             .click(function () {
                 displayAudioContent(content, i);
+                $(".learn-button").removeClass("active");
+                $(this).addClass("active");
             });
 
         $("#learn-buttons").append(audioButton);
@@ -75,6 +77,7 @@ $(document).ready(function () {
         });
     }
     let now = new Date();
+    // TODO update to this page
     add_interation({ timestamp: now, pageUrl: "/learn/1" });
 
     displayContent(data, id);

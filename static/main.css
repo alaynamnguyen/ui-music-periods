@@ -1,187 +1,197 @@
 /* NAV BAR */
 .navbar {
-  background-color: #423e3bff;
+    background-color: #423e3bff;
 }
 .navbar-brand,
 .nav-link {
-  color: white;
+    color: white;
 }
 .navbar-brand:hover,
 .nav-link:hover {
-  color: white;
+    color: white;
 }
 /* HOME PAGE */
 .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
 }
 .home p,
 .subtitle {
-  font-size: 24px;
-  color: #595959;
+    font-size: 24px;
+    color: #595959;
 }
 .playfair {
-  font-family: "Playfair Display";
+    font-family: "Playfair Display";
 }
 .home-title {
-  font-size: 32pt;
-  font-weight: bolder;
+    font-size: 32pt;
+    font-weight: bolder;
 }
 .music-eras-table {
-  border-collapse: collapse;
-  margin-bottom: 20px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 .music-eras-table th,
 .music-eras-table td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
-  color: #666666;
-  font-size: 14pt;
-  padding-inline: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #666666;
+    font-size: 14pt;
+    padding-inline: 20px;
 }
 .music-eras-table th {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 .home-buttons {
-  padding: 20px;
+    padding: 20px;
 }
 .button-cards {
-  height: fit-content;
-  background-color: #eeeeeeff;
-  border: 1px solid #595959;
-  padding: 15px;
-  display: inline-block;
+    height: fit-content;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    padding: 15px;
+    display: inline-block;
 }
 .home-button {
-  background-color: #7c000aff;
-  border: 1px solid #595959;
-  width: 200px;
-  height: 40px;
-  color: white;
-  border-radius: 7px;
+    background-color: #7c000aff;
+    border: 1px solid #595959;
+    width: 200px;
+    height: 40px;
+    color: white;
+    border-radius: 7px;
 }
 .home-button-text {
-  font-size: 16pt;
+    font-size: 16pt;
 }
 .home-buttons img {
-  height: 200px;
-  width: 200px;
-  margin: 0px;
-  padding: 0px;
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
 }
 .spacer {
-  display: inline-block;
-  width: 50px;
+    display: inline-block;
+    width: 50px;
 }
 
 /* LEARN PAGE */
 #learn-container,
-#learn-end-container {
-  margin-top: 40px;
+#learn-end-container,
+#quiz-container,
+#quiz-end-container {
+    margin-top: 40px;
 }
 #learn-title {
-  font-weight: bold;
-  font-size: 36px;
-  text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .center {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 audio {
-  width: 100%;
-  height: 50px;
-  outline: none;
-  margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    margin: 20px 0;
 }
 .home-buttons {
-  padding: 20px;
+    padding: 20px;
 }
 .image-icon {
-  height: fit-content;
-  background-color: #eeeeeeff;
-  border: 1px solid #595959;
-  padding: 15px;
-  display: inline-block;
+    height: fit-content;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    padding: 15px;
+    display: inline-block;
 }
 .red-button {
-  display: inline-block;
-  width: 200px;
-  color: #eeeeeeff;
-  text-decoration: none;
-  background-color: #7c000aff;
-  border: 1px solid #595959;
-  border-radius: 7px;
-  padding: 2px 0;
-  margin: 5px 0;
+    display: inline-block;
+    width: 200px;
+    color: #eeeeeeff;
+    text-decoration: none;
+    background-color: #7c000aff;
+    border: 1px solid #595959;
+    border-radius: 7px;
+    padding: 2px 0;
+    margin: 5px 0;
 }
 .red-button:hover {
-  background-color: rgb(155, 74, 81);
-  color: #eeeeeeff;
-  text-decoration: none;
+    background-color: rgb(155, 74, 81);
+    color: #eeeeeeff;
+    text-decoration: none;
 }
 .learn-text {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .learn-title {
-  font-style: italic;
+    font-style: italic;
 }
 #learn-next {
-  margin-top: 20px;
+    margin-top: 20px;
+}
+#learn-buttons {
+    margin-top: 20px;
 }
 .learn-button {
-  display: inline-block;
-  width: 100px;
-  color: #595959;
-  text-decoration: none;
-  background-color: #eeeeeeff;
-  border: 1px solid #595959;
-  border-radius: 7px;
-  padding: 2px 0;
-  margin: 5px 10px;
+    display: inline-block;
+    width: 100px;
+    color: #595959;
+    text-decoration: none;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    border-radius: 7px;
+    padding: 2px 0;
+    margin: 5px 10px;
 }
 .learn-button:hover {
-  background-color: #ddddddff;
-  color: #595959;
-  text-decoration: none;
+    background-color: #ddddddff;
+    color: #595959;
+    text-decoration: none;
+}
+.learn-button.active {
+    background-color: #595959;
+    color: white;
 }
 /* LEARN END */
 .learn-end-options {
-  margin-top: 40px;
+    margin-top: 40px;
 }
 .quiz-button {
-  display: inline-block;
-  width: 200px;
-  color: #595959;
-  text-decoration: none;
-  background-color: #eeeeeeff;
-  border: 1px solid #595959;
-  border-radius: 7px;
-  padding: 2px 0;
-  margin: 5px 0;
+    display: inline-block;
+    width: 200px;
+    color: #595959;
+    text-decoration: none;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    border-radius: 7px;
+    padding: 2px 0;
+    margin: 5px 0;
 }
 .quiz-button:hover {
-  background-color: #ddddddff;
-  color: #595959;
-  text-decoration: none;
+    background-color: #ddddddff;
+    color: #595959;
+    text-decoration: none;
 }
 
 /* QUIZ */
 
 .btn-outline-secondary-dark {
-  color: #343a40;
-  background-color: #eeeeeeff;
-  border-color: #6c757d;
-
-  &:hover {
-    /* color: #fff; */
-    background-color: #ddddddff;
+    color: #343a40;
+    background-color: #eeeeeeff;
     border-color: #6c757d;
-  }
+
+    &:hover {
+        /* color: #fff; */
+        background-color: #ddddddff;
+        border-color: #6c757d;
+    }
 }
