@@ -68,11 +68,15 @@ def quiz_end():
     for question in incorrect_questions:
         # Assuming questionId matches index+1
         question_data = quiz_questions[question['questionId'] - 1]
+        review_id = 1
+        for entry_id, entry_data in data.items():
+            if entry_data["title"] == question_data['correct']:
+                review_id = entry_data['id']
         detailed_incorrect.append({
             'audio': question_data['audio'],
             'correct': question_data['correct'],
             'selected': question['selectedAnswer'],
-            'learn_more_url': f'/learn/{question["questionId"]}'
+            'learn_more_url': f'/learn/{review_id}'
         })
 
     print(detailed_incorrect)
