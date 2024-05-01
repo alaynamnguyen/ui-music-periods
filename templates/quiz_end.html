@@ -1,70 +1,73 @@
 {% extends "layout.html" %} {% block content %}
 <script
-    type="text/javascript"
-    src="{{ url_for('static', filename = 'learn_end.js') }}"
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'learn_end.js') }}"
 ></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 
 <div id="quiz-end-container" class="container-fluid center">
-    <div id="quiz-title" class="playfair home-title">Quiz Completed!</div>
-    <h4>Score: {{ score }}</h4>
+  <div id="quiz-title" class="playfair home-title">Quiz Completed!</div>
+  <h4>Score: {{ score }}/{{total_questions}}</h4>
 
-    <div class="row mt-5">
-        <!-- Left column for audio and learning buttons -->
-        <div class="col-md-9">
-            {% if incorrect_questions %}
-            <h2 class="subtitle">
-                These are some questions you missed or skipped
-            </h2>
-            <div class="mt-4">
-                {% for question in incorrect_questions %}
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-5">
-                        <audio controls>
-                            <source
-                                src="{{ question.audio }}"
-                                type="audio/wav"
-                            />
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <div class="col-md-4">
-                        <div>
-                            You Selected: &nbsp;
-                            <div class="incorrect">{{question.selected}}</div>
-                        </div>
-                        <div>
-                            Correct Answer:
-                            <div class="correct">{{question.correct}}</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <a
-                            href="{{ question.learn_more_url }}"
-                            class="btn red-button"
-                            >Review {{question.correct}}</a
-                        >
-                    </div>
-                </div>
-                <hr />
-                {% endfor %}
+  <div class="row mt-5">
+    <!-- Left column for audio and learning buttons -->
+    <div class="col-md-9">
+      {% if incorrect_questions %}
+      <h2 class="subtitle">These are some questions you missed or skipped</h2>
+      <div class="mt-4">
+        {% for question in incorrect_questions %}
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5">
+            <audio controls>
+              <source src="{{ question.audio }}" type="audio/wav" />
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+          <div class="col-md-4">
+            <div>
+              You Selected: &nbsp;
+              <div class="incorrect">{{question.selected}}</div>
             </div>
-            {% endif %}
-        </div>
-
-        <!-- Right column for the sticky Retake Quiz button -->
-        <div class="col-md-3 d-flex flex-column align-items-center">
-            <div class="home-buttons">
-                <div class="button-cards">
-                    <img
-                        src="https://tarangkd2113.github.io/ui-project-resources/home_page_quiz.png"
-                    />
-                    <br /><br />
-                    <button id="quizButton" class="home-button">
-                        <span class="home-button-text">Retake the Quiz</span>
-                    </button>
-                </div>
+            <div>
+              Correct Answer:
+              <div class="correct">{{question.correct}}</div>
             </div>
+          </div>
+          <div class="col-md-3">
+            <a href="{{ question.learn_more_url }}" class="btn red-button"
+              >Review {{question.correct}}</a
+            >
+          </div>
         </div>
+        <hr />
+        {% endfor %}
+      </div>
+      {% else %}
+      <h2 class="subtitle">Congratulations on getting everything correct!</h2>
+      <script>
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: { y: 0.6 },
+        });
+      </script>
+      {% endif %}
     </div>
+
+    <!-- Right column for the sticky Retake Quiz button -->
+    <div class="col-md-3 d-flex flex-column align-items-center">
+      <div class="home-buttons">
+        <div class="button-cards">
+          <img
+            src="https://tarangkd2113.github.io/ui-project-resources/home_page_quiz.png"
+          />
+          <br /><br />
+          <button id="quizButton" class="home-button">
+            <span class="home-button-text">Retake the Quiz</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}
