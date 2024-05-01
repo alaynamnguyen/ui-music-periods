@@ -77,8 +77,8 @@ $(document).ready(function () {
         });
     }
     let now = new Date();
-    // TODO update to this page
-    add_interation({ timestamp: now, pageUrl: "/learn/1" });
+    add_interation({ timestamp: now, pageUrl: "/learn/" + id });
 
     displayContent(data, id);
+    $(".learn-button[data-index='0']").click();
 });
