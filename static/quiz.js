@@ -88,6 +88,7 @@ $(document).ready(function () {
       .text(answered ? "Next Question" : "Skip")
       .off("click")
       .click(function () {
+        if (!answered) sendAnswerData(data.current_id, "Skip", false);
         window.location.href = nextUrl;
       });
   }
