@@ -34,7 +34,7 @@ $(document).ready(function () {
       "Romantic",
       "Renaissance",
       "Classical",
-      " 20th Century",
+      "20th Century",
     ];
     shuffleArray(options);
 
