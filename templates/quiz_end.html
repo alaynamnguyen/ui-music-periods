@@ -18,7 +18,7 @@
             <div class="mt-4">
                 {% for question in incorrect_questions %}
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <audio controls>
                             <source
                                 src="{{ question.audio }}"
@@ -27,7 +27,15 @@
                             Your browser does not support the audio element.
                         </audio>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <div>
+                            You Selected: &nbsp;<div class="incorrect"> {{question.selected}}</div>
+                        </div>
+                        <div>
+                            Correct Answer: <div class="correct"> {{question.correct}}</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
                         <a
                             href="{{ question.learn_more_url }}"
                             class="btn red-button"

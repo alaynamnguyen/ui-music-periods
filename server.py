@@ -64,14 +64,18 @@ def quiz_end():
     ]
     # Include detailed info for rendering in the template
     detailed_incorrect = []
+    print(incorrect_questions)
     for question in incorrect_questions:
         # Assuming questionId matches index+1
         question_data = quiz_questions[question['questionId'] - 1]
         detailed_incorrect.append({
             'audio': question_data['audio'],
             'correct': question_data['correct'],
+            'selected': question['selectedAnswer'],
             'learn_more_url': f'/learn/{question["questionId"]}'
         })
+
+    print(detailed_incorrect)
     return render_template('quiz_end.html', score=len(results.get('results', [])) - len(incorrect_questions), incorrect_questions=detailed_incorrect)
 
 
