@@ -8,8 +8,11 @@
 </script>
 
 <div id="quiz-container" class="container-fluid">
-  <div class="d-flex justify-content-center text-center playfair mb-5">
+  <div
+    class="d-flex justify-content-center flex-column text-center playfair mb-5"
+  >
     <div id="quiz-title" class="playfair home-title">Quiz</div>
+    <div class="playfair">{{data.current_id}}/{{data.total_questions}}</div>
   </div>
   <div class="row d-flex justify-content-center">
     <!-- Left column for instructions and audio -->
