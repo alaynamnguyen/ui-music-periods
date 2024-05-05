@@ -78,7 +78,26 @@
     display: inline-block;
     width: 50px;
 }
-
+#period-buttons {
+    margin-bottom: 20px;
+}
+.period-button {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    color: #595959;
+    text-decoration: none;
+    background-color: #eeeeeeff;
+    border: 1px solid #595959;
+    border-radius: 7px;
+    padding: 2px 0;
+    margin: 8px 10px;
+}
+.period-button:hover {
+    background-color: #ddddddff;
+    color: #595959;
+    text-decoration: none;
+}
 /* LEARN PAGE */
 #learn-container,
 #learn-end-container,
