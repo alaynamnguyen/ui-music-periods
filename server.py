@@ -47,7 +47,7 @@ def restart_quiz():
 @app.route('/quiz/<int:id>')
 def quiz(id):
 
-    if id < 1 or id > len(quiz_questions):
+    if id < 0 or id > len(quiz_questions):
         return redirect(url_for('quiz', id=1))
     if id > len(quiz_questions):
         return render_template('quiz_end', score=score)
@@ -65,7 +65,6 @@ def quiz_end():
     ]
     # Include detailed info for rendering in the template
     detailed_incorrect = []
-    print(incorrect_questions)
     for question in incorrect_questions:
         # Assuming questionId matches index+1
         question_data = quiz_questions[question['questionId'] - 1]
@@ -80,7 +79,6 @@ def quiz_end():
             'learn_more_url': f'/learn/{review_id}'
         })
 
-    print(detailed_incorrect)
     return render_template('quiz_end.html', score=len(results.get('results', [])) - len(incorrect_questions), incorrect_questions=detailed_incorrect, total_questions=len(results.get('results', [])))
 
 
@@ -104,7 +102,6 @@ results = {}  # This will store results for each quiz session
 @app.route('/update_score', methods=['POST'])
 def update_score():
     global results
-    print(results)
     json_data = request.get_json()
     question_id = json_data['questionId']
     if 'results' not in results:
